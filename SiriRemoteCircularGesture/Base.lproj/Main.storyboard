@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SiriRemoteCircularGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⏺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOR-Rg-dl7">
+                                <rect key="frame" x="919" y="75" width="82" height="96"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="82"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SiriRemote" translatesAutoresizingMaskIntoConstraints="NO" id="akr-xD-Kiw">
+                                <rect key="frame" x="593.5" y="353" width="733" height="817"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="733" id="6Py-YN-Dy2"/>
+                                    <constraint firstAttribute="height" constant="817" id="Dkd-3w-OPs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hint" translatesAutoresizingMaskIntoConstraints="NO" id="KTZ-9i-SW0">
+                                <rect key="frame" x="860" y="453" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jHl-Oi-jNM"/>
+                                    <constraint firstAttribute="width" constant="200" id="l8m-KC-xkE"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wRu-lO-z7m" customClass="TvOSSlider" customModule="TvOSSlider">
+                                <rect key="frame" x="96" y="217" width="1728" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KTZ-9i-SW0" firstAttribute="centerX" secondItem="akr-xD-Kiw" secondAttribute="centerX" id="NRo-O5-AQa"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="akr-xD-Kiw" secondAttribute="bottom" constant="-150" id="QR6-jY-dKB"/>
+                            <constraint firstItem="KTZ-9i-SW0" firstAttribute="top" secondItem="akr-xD-Kiw" secondAttribute="top" constant="100" id="Vtu-QE-RVn"/>
+                            <constraint firstItem="akr-xD-Kiw" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="iur-Gx-vJL"/>
+                            <constraint firstItem="rOR-Rg-dl7" firstAttribute="centerX" secondItem="akr-xD-Kiw" secondAttribute="centerX" id="wty-f4-XFm"/>
+                            <constraint firstItem="rOR-Rg-dl7" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="15" id="yjR-sa-1Gj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="directionLabel" destination="rOR-Rg-dl7" id="IUm-He-iSi"/>
+                        <outlet property="hintView" destination="KTZ-9i-SW0" id="qsr-kE-DR3"/>
+                        <outlet property="slider" destination="wRu-lO-z7m" id="rk4-m8-Onc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="-5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hint" width="216" height="216"/>
+        <image name="SiriRemote" width="700" height="1000"/>
+    </resources>
+</document>

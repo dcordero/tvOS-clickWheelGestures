@@ -1,0 +1,21 @@
+PODS:
+  - TvOSSlider (1.2.0)
+
+DEPENDENCIES:
+  - TvOSSlider (from `https://github.com/zattoo/TvOSSlider.git`)
+
+EXTERNAL SOURCES:
+  TvOSSlider:
+    :git: https://github.com/zattoo/TvOSSlider.git
+
+CHECKOUT OPTIONS:
+  TvOSSlider:
+    :commit: 777595bfd3da33a81f13c9a29e59aa23403e97b0
+    :git: https://github.com/zattoo/TvOSSlider.git
+
+SPEC CHECKSUMS:
+  TvOSSlider: 28bb17a18ea197f5ba229353601be7393cccc430
+
+PODFILE CHECKSUM: df24fa0e958b7e2f0a27eda646141cc7262ab2f6
+
+COCOAPODS: 1.10.1
